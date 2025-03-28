@@ -15,7 +15,6 @@ autoinstall:
         - netstat
         - git
         - wget
-        - google-chrome-stable
     snaps:
         - name: spotify
           channel: stable
