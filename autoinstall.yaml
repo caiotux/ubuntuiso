@@ -5,7 +5,7 @@ autoinstall:
         realname: 'teste'
         hostname: teste-desktop
         username: teste1
-        password: "$6$zSVItWd5bQufUacw$eWLiF6Ez.0HAU9I6VFdOCfPy3SzcXFIBEMK/RA2PNz4uzpKpn7vI5AlNrP9vL4os.7zZxzLaaT4OshbKuh/iV/"
+        password: '$6$zSVItWd5bQufUacw$eWLiF6Ez.0HAU9I6VFdOCfPy3SzcXFIBEMK/RA2PNz4uzpKpn7vI5AlNrP9vL4os.7zZxzLaaT4OshbKuh/iV/'
 
     locale: pt_BR.utf8
     keyboard:
