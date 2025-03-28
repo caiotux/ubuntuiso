@@ -27,7 +27,7 @@ autoinstall:
           channel: stable
           classic: true
         - name: notion-snap-reborn
-          chanell: stable 
+          channel: stable 
           classic: true
         - name: dbeaver-ce
           channel: stable
@@ -42,3 +42,7 @@ autoinstall:
         install: true
     updates: all
     shutdown: reboot
+    interactive-sections:
+        - user-setup
+        - keyboard-setup
+        
