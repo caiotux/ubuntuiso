@@ -5,43 +5,31 @@ autoinstall:
         realname: 'teste'
         hostname: teste-desktop
         username: teste1
-        password: 'jusbrasil!00'
+        password: "$6$zSVItWd5bQufUacw$eWLiF6Ez.0HAU9I6VFdOCfPy3SzcXFIBEMK/RA2PNz4uzpKpn7vI5AlNrP9vL4os.7zZxzLaaT4OshbKuh/iV/"
+
     locale: pt_BR.utf8
     keyboard:
         layout: br
     timezone: "America/Sao_Paulo"   
     packages:
         - curl
-        - netstat
         - git
         - wget
     snaps:
         - name: spotify
           channel: stable
-          classic: false
         - name: code
           channel: stable
-          classic: false
         - name: slack
           channel: stable
-          classic: false
-        - name: notion-snap-reborn
-          channel: stable 
-          classic: false
         - name: dbeaver-ce
           channel: stable
-          classic: false
         - name: postman 
           channel: stable
-          classic: false
-                
-    codecs:
-        install: true
-    drivers:
-        install: true
+
     updates: all
     shutdown: reboot
-    interactive-sections:
-        - user-setup
-        - keyboard-setup
+    late-commands:
+        -curt="apt update && apt upgrade -y""
+"
         
