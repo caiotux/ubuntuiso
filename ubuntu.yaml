@@ -1,0 +1,44 @@
+#cloud-config
+autoinstall:
+    version: 1
+    identity:
+        realname: 'teste'
+        hostname: teste-desktop
+        username: teste1
+        password: '/rXBeKTYw05l/lXpmy8ZgX9QHQa13hloX4YWT72qJmDUAt6UFZWl3ItEsWimaUPmRBFaXpZwyPIXmbm0'
+    locale: pt_BR.utf8
+    keyboard:
+        layout: br
+    timezone: "America/Sao_Paulo"   
+    packages:
+        - curl
+        - netstat
+        - git
+        - wget
+        - google-chrome-stable
+    snaps:
+        - name: spotify
+          channel: stable
+          classic: false
+        - name: code
+          channel: stable
+          classic: true 
+        - name: slack
+          channel: stable
+          classic: true
+        - name: notion-snap-reborn
+          chanell: stable 
+          classic: true
+        - name: dbeaver-ce
+          channel: stable
+          classic: true 
+        - name: postman 
+          channel: stable
+          classic: true 
+                
+    codecs:
+        install: true
+    drivers:
+        install: true
+    updates: all
+    shutdown: reboot
