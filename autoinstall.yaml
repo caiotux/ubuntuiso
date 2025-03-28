@@ -1,0 +1,35 @@
+#cloud-config
+autoinstall:
+    version: 1
+    identity:
+        realname: 'teste'
+        hostname: teste-desktop
+        username: teste1
+        password: "$6$zSVItWd5bQufUacw$eWLiF6Ez.0HAU9I6VFdOCfPy3SzcXFIBEMK/RA2PNz4uzpKpn7vI5AlNrP9vL4os.7zZxzLaaT4OshbKuh/iV/"
+
+    locale: pt_BR.utf8
+    keyboard:
+        layout: br
+    timezone: "America/Sao_Paulo"   
+    packages:
+        - curl
+        - git
+        - wget
+    snaps:
+        - name: spotify
+          channel: stable
+        - name: code
+          channel: stable
+        - name: slack
+          channel: stable
+        - name: dbeaver-ce
+          channel: stable
+        - name: postman 
+          channel: stable
+
+    updates: all
+    shutdown: reboot
+    late-commands:
+        -curt="apt update && apt upgrade -y""
+"
+        
