@@ -22,19 +22,19 @@ autoinstall:
           classic: false
         - name: code
           channel: stable
-          classic: true 
+          classic: false
         - name: slack
           channel: stable
-          classic: true
+          classic: false
         - name: notion-snap-reborn
           channel: stable 
-          classic: true
+          classic: false
         - name: dbeaver-ce
           channel: stable
-          classic: true 
+          classic: false
         - name: postman 
           channel: stable
-          classic: true 
+          classic: false
                 
     codecs:
         install: true
